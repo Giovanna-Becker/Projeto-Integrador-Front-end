@@ -1,1 +1,42 @@
-<p>entrar works!</p>
+<div class="container-fluid d-flex align-items-center justify-content-center" id="gradiente-bg">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row margem">
+        <div class="col-md-6">
+          <h1 class="text-center mb-3 fs-40 cor-text">Entrar</h1>
+          <hr>
+          <div class="form-group ">
+            <label for="usuario" class="cor-text">Usuário</label>
+            <span class="fa fa-envelope"></span>
+            <input [(ngModel)]="userLogin.usuario" class="form-control" type="text" name="usuario" id="usuario"
+              placeholder="Seu usuário">
+          </div>
+
+          <div class="form-group">
+            <label for="senha" class="cor-text">Senha</label>
+            <span class="fa fa-lock"></span>
+            <input [(ngModel)]="userLogin.senha" class="form-control" type="password" name="senha" id="senha"
+              (keyup.enter)="entrar()" placeholder="Sua senha">
+          </div>
+
+          <!-- <div class="form-group text-center">
+              <a href="">Esqueceu a senha?</a>
+            </div> -->
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn bt-style mt-3 ml-1 botao" (click)="entrar()">Entrar</button>
+          </div>
+
+          <hr class="mt-4 mb-4">
+          <p class="text-center "> Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se!</a></p>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn bt-style mt-3 botao" routerLink="/inicio">Se perdeu? Volte para o
+              início</button>
+          </div>
+        </div>
+
+        <div class="col-md-6" id="img-bg"><img src="../../assets/img/img-entrar/entrar-bg.png" width="600px" alt=""></div>
+
+      </div>
+    </div>
+  </div>

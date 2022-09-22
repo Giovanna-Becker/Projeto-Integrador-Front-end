@@ -1,0 +1,44 @@
+.gradient {
+    height: 130vh;
+    background: linear-gradient(45deg, #293462, #83c59f, #859aec, #293462);
+    background-size: 300% 300%;
+     animation: colors 15s forwards infinite;
+    }
+    @keyframes colors {
+        0%{
+       background-position: 0% 50%;
+        }
+        50%{
+      background-position: 100% 50%;
+        }
+        100%{
+       background-position:  0% 50%;
+        }
+}
+
+
+span{
+    position: absolute;
+    margin-left: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgba(42, 56, 165, 0.579);
+}
+.form-group .form-control {
+    padding-left: 2.375rem;
+}
+
+.form-box {
+    backdrop-filter: blur(40px);
+    padding: 0 70px;
+
+    border-radius: 20px;
+    margin: auto;
+}
+
+.color1 {
+    background-color: white;
+    opacity:0.9;
+    border-radius: 25px;
+}

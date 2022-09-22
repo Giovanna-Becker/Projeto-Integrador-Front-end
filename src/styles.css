@@ -1,1 +1,172 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.fs-14{
+  font-size: 14pt;
+}
+
+.fs-54{
+    font-size: 54pt;
+}
+
+.fs-18 {
+  font-size: 18pt;
+}
+
+.fs-15 {
+  font-size: 15pt;
+}
+
+.fs-45 {
+  font-size: 45pt;
+}
+
+.fs-25 {
+  font-size: 25pt !important;
+}
+
+.fs-30 {
+  font-size: 30pt;
+}
+
+.btn-blue{
+    background-color: #23405B !important;
+}
+
+.borda{
+    border: 3px solid #23405B !important;
+    margin: auto;
+}
+
+.size-card {
+  height: 530px;
+}
+
+.navbar-paddin {
+  padding-top: 80px;
+}
+
+.bg-cg-100 {
+  background-color: var(--cg-100);
+}
+
+.py-50 {
+  padding: 7rem 0;
+}
+
+.bg-padrao {
+  background-color: #ececec;
+}
+
+.bg-padrao1{
+  background-color: #23405B;
+}
+
+.t-padrao1{
+  color: #23405B;
+}
+
+.t-padrao {
+  color: #ECECEC;
+}
+
+.corFooterCopy {
+  color: #23405B !important;
+}
+
+.text-cg-500 {
+  color: var(--cg-500) !important;
+}
+
+.fs-10 {
+  font-size: 10pt;
+}
+
+.bb-cg-200 {
+  border-bottom: 1px solid var(--cg-200);
+}
+
+/* .color-nav {
+  background-color: #98E3AD !important;
+} */
+
+.color-nav.dark-theme{
+  --bkg-color: #23405B;
+}
+.color-nav{
+  --bkg-color: #98E3AD;
+}
+.color-nav{
+  background-color: var(--bkg-color) !important;
+}
+
+/* ----------------------------------------- Dark Theme */
+
+/* .dark-theme {
+    --text-color: #eee;
+    --bkg-color: #252222;
+    --btn-txt-color: rgb(46, 43, 43);
+    --btn-bg-color: rgb(20, 211, 195);
+  } */
+
+  body {
+    --text-color: #222;
+    --bkg-color: #ececec;
+    --btn-txt-color: white;
+    --btn-bg-color: #23405B;
+    --icon-like: #222;
+    --color-titulo: #23405B;
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #252222 !important;
+    --btn-txt-color: rgb(46, 43, 43) !important;
+    --btn-bg-color: #7CB1E2;
+    --icon-like: white;
+    --color-titulo: #5b6c7e;
+  }
+  
+  body {
+    background: var(--bkg-color) !important;
+  }
+
+  a,p,label,h5,h2,td,th {
+    color: var(--text-color);
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    color: var(--btn-txt-color);
+    background-color: var(--btn-bg-color);
+  }
+
+  .like{
+    color: var(--icon-like);
+  }
+
+  .color-titulo{
+    color: var(--color-titulo);
+  }
+
+  .modal-content {
+  --text-color: #23405B;
+  --bkg-color: #fff;
+  --btn-txt-color: white;
+  --btn-bg-color: rgb(11, 88, 160);
+  }
+
+  .modal-content.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #252222 !important;
+  --btn-txt-color: rgb(46, 43, 43) !important;
+  --btn-bg-color: rgb(20, 211, 195);
+  }
+
+  .modal-content {
+  background: var(--bkg-color) !important;
+}

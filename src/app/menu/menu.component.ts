@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+import { toggleDarkTheme } from 'src/darkTheme';
+
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +11,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  nome = environment.nome
+  sobrenome = environment.sobrenome
+  foto = environment.foto
+  id = environment.id
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0, 0)
+  }
+
+  sair(){
+    this.router.navigate(['/inicio'])
+    environment.token = ''
+    environment.nome = ''
+    environment.sobrenome = ''
+    environment.foto = ''
+    environment.id = 0
+  }
+
+  darkTheme(){
+    toggleDarkTheme()
   }
 
 }
+
